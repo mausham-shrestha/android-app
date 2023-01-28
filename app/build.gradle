@@ -50,6 +50,10 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
 
+    // Navigation libraries
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
 // optional - RxJava support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
 }
