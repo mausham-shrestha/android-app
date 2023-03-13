@@ -7,7 +7,7 @@
   ~  */
   -->
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,14 +16,11 @@
     android:id="@+id/reminder_detail_fragment">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         app:cardCornerRadius="4dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/edit_submit_btn"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/purple_200"
         >
         <TextView
             android:id="@id/reminder_name"
@@ -35,16 +32,4 @@
             />
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/edit_submit_btn"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        app:layout_constraintTop_toBottomOf="@id/card_view"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/edit_submit"
-        />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

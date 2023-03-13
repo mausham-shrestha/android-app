@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Reminder</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_new_reminder">Add New Reminder</string>
+    <string name="currency_symbol">$</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reminder_name">Reminder Name</string>
+    <string name="reminder_description">Description</string>
+    <string name="reminder_save_btn">Save</string>
+    <string name="reminder_date_format">YYYY/MM/DD</string>
+    <string name="edit_submit">Submit</string>
 </resources>

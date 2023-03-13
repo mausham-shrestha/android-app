@@ -17,5 +17,32 @@
         android:id="@+id/reminderListFragment"
         android:name="com.example.android.ReminderListFragment"
         android:label="fragment_reminder_list_fragment"
-        tools:layout="@layout/fragment_reminder_list_fragment" />
+        tools:layout="@layout/fragment_reminder_list_fragment" >
+        <action
+            android:id="@+id/action_reminderListFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+        <action
+            android:id="@+id/action_reminderListFragment_to_reminderDetailFragment"
+            app:destination="@id/reminderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReminderFragment"
+        android:name="com.example.android.AddReminderFragment"
+        android:label="AddReminderFragment" >
+        <action
+            android:id="@+id/action_addReminderFragment_to_reminderListFragment"
+            app:destination="@id/reminderListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reminderDetailFragment"
+        android:name="com.example.android.ReminderDetailFragment"
+        android:label="ReminderDetailFragment" >
+        <argument
+            android:name="reminder_id"
+            app:argType="integer"
+            />
+        <action
+            android:id="@+id/action_reminderDetailFragment_to_reminderListFragment"
+            app:destination="@id/reminderListFragment" />
+    </fragment>
 </navigation>
